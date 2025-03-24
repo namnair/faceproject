@@ -28,3 +28,7 @@ server/*.pyc
 
 # Ignore macOS specific files
 .DS_Store
+
+
+server/dataset
+server/models
