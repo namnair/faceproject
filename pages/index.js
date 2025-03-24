@@ -32,6 +32,12 @@ const NavButtons = () => {
           Evals
         </button>
       </Link>
+
+      <Link href="/clear">
+        <button className="w-full sm:w-64 bg-[#c05f3c] hover:bg-[#a14d34] text-white font-extrabold py-3 rounded-lg shadow-md transform transition-all duration-200 ease-in-out hover:scale-105 mb-4">
+          Clear Data
+        </button>
+      </Link>
     </div>
   );
 };

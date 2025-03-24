@@ -46,6 +46,7 @@ In the second Terminal window:
 2. **Set up the Python environment (skip if already done):**
     ```bash
     python3 setup.py
+    pip3 install tf-keras
     ```
 
 3. **Start the Python backend:**
