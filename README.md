@@ -42,5 +42,4 @@ In the second Terminal window:
     python3 server.py
     ```
 
-    It may appear stuck, but might be initializing Tensorflow, so waiting may be good.
-    Tip: Press Ctrl+C to exit any running processes once no longer required.
+    It may appear stuck, but might be initializing Tensorflow, so waiting may be good. Press Ctrl+C to exit any running processes once no longer required.
