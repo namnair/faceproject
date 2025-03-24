@@ -32,7 +32,7 @@ export default function Evals() {
     setEvaluation(null);
 
     try {
-      const response = await fetch("https://localhost/evals");
+      const response = await fetch("http://192.168.29.150:5000/evals");
       const data = await response.json();
 
       if (response.ok) {
