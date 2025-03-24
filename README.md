@@ -18,7 +18,7 @@ In the first Terminal window:
 
 3. **Start the Next.js frontend:**
     ```bash
-    npm run devhttps
+    npm run dev
     ```
 
 ## 2. Backend Setup
