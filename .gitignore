@@ -1,0 +1,30 @@
+node_modules
+
+# Ignore node_modules in the root directory
+/node_modules/
+
+# Ignore venv in the /server directory
+/server/venv/
+
+# Ignore certificates folder (if it's meant to be ignored)
+certificates/
+
+# Ignore Next.js build and cache files
+.next/
+
+# Ignore Python bytecode files globally
+__pycache__/
+*.pyc
+
+# Ignore Python bytecode files specifically in /server
+server/__pycache__/
+server/*.pyc
+
+# Ignore environment configuration files
+.env
+.env.local
+.env.development
+.env.production
+
+# Ignore macOS specific files
+.DS_Store

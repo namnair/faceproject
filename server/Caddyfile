@@ -1,0 +1,29 @@
+localhost {
+    # CORS Handling Block
+    @cors_preflight method OPTIONS
+
+    # CORS headers for preflight and actual requests
+    handle @cors_preflight {
+        header {
+            Access-Control-Allow-Origin "{http.request.header.Origin}"  # Allow the request's origin
+            Vary Origin
+            Access-Control-Allow-Methods "GET, POST, OPTIONS"
+            Access-Control-Allow-Headers "Content-Type, Authorization"
+            Access-Control-Max-Age "3600"
+        }
+        respond "" 204  # No content for preflight response
+    }
+
+    # Proxy requests to Flask backend
+    handle /register {
+        reverse_proxy localhost:5001
+    }
+
+    handle /infer {
+        reverse_proxy localhost:5001
+    }
+
+    handle /evals {
+        reverse_proxy localhost:5001
+    }
+}

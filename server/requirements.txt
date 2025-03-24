@@ -1,0 +1,6 @@
+Flask
+flask-cors
+deepface
+scikit-learn
+numpy
+opencv-python-headless
