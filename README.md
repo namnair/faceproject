@@ -21,6 +21,18 @@ In the first Terminal window:
     npm run dev
     ```
 
+4. In chrome, go to this URL:
+
+chrome://flags/#unsafely-treat-insecure-origin-as-secure
+
+In the text box, paste in these http://192.168.29.150:3000, http://localhost:3000
+as one comma-seperated line,
+or whatever address Next.js gives you (as these may change),
+then switch Disabled to Enabled in the dropdown on the side.
+A popup will come on the bottom asking to Relaunch Chrome, click it.
+
+This is necessary to enable webcam to work on a localhost site.
+
 ## 2. Backend Setup
 
 In the second Terminal window:
