@@ -54,7 +54,7 @@ def train_student(photos, name, student_id):
 
         # Detect faces
         faces = DeepFace.extract_faces(
-            photo, detector_backend="centerface", enforce_detection=False)
+            photo, detector_backend="centerface", enforce_detection=False, anti_spoofing=True)
 
         for face in faces:
             print(
@@ -155,7 +155,7 @@ def infer(photo):
     print("Detecting faces in the input photo.")
     try:
         faces = DeepFace.extract_faces(
-            photo, detector_backend="centerface", enforce_detection=False)
+            photo, detector_backend="centerface", enforce_detection=False, anti_spoofing=True)
     except ValueError:
         return {"status": "error", "message": "No faces detected."}
 
