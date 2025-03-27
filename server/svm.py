@@ -81,11 +81,10 @@ def train_student(photos, name, student_id):
                 print(f"Face region is empty in photo {idx + 1}. Skipping.")
                 continue
 
-            # Save the extracted face image to disk
-            extracted_face_path = os.path.join(
-                student_folder, f"face_{idx}.jpg")
-            cv2.imwrite(extracted_face_path, face)
-            print(f"Saved extracted face at {extracted_face_path}")
+            # extracted_face_path = os.path.join(
+                # student_folder, f"face_{idx}.jpg")
+            # cv2.imwrite(extracted_face_path, face)
+            # print(f"Saved extracted face at {extracted_face_path}")
 
             # Extract embedding
             embedding = DeepFace.represent(
